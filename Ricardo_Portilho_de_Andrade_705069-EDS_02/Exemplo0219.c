@@ -1,5 +1,5 @@
 /*    
-Exemplo0220 - v0.0. - 27 / 03 / 2020    
+Exemplo0219 - v0.0. - 27 / 03 / 2020    
 Author: Ricardo Portilho de Andrade       
 */ 
 // dependencias 
@@ -22,7 +22,7 @@ int main ( )
    
  // identificar 
    
-   printf ( "%s\n", "\nExemplo0220 - Programa = v2.0" );     
+   printf ( "%s\n", "\nExemplo0219 - Programa = v2.0" );     
    printf ( "%s\n", "Autor: Ricado Portilho de Andrade" );     
    printf ( "\n" ); // mudar de linha 
  //(OBS.:Estou utilizando esse metodo de indentificaçao,
@@ -35,8 +35,8 @@ int main ( )
    z = IO_readdouble ( "Entrar com outro valor real (valor para criar intervalo): " ); 
      
  // testar valor      
-  
-   if ((x!=z)&&(x!=y)&&(y!=z))
+
+   if (y!=z)
    {
       if((y < x) && (x < z))
       {
@@ -47,16 +47,15 @@ int main ( )
       {
          IO_printf ( "%s (%lf) < (%lf) < (%lf)\n", "O primeiro valor esta entre os dois ", z, x, y  );
       }
-      
-      else
-      { 
-      IO_printf ( "%s esta fora do intervalo (%lf:%lf) \n", "Erro: ", x, z, y);
-      }   
+      else 
+      {
+      IO_printf ( "%s%lf esta fora do intervalo (%lf:%lf) \n", "ERRO:  ", x, z, y);
+      }
    }
    
    else
    {
-      IO_printf ( "%s (%lf) = (%lf) = (%lf), (%lf) = (%lf), (%lf) = (%lf) ou (%lf) = (%lf).\n", "ERRO:Os valores de entrada estao errados", z, y, x, z, x, x, y, y, z);
+     IO_printf ( "%s (%lf) = (%lf), ", "ERRO:Os valores de entrada estao errados", y, z);
    } 
   
   // encerrar     
@@ -92,7 +91,6 @@ Exercicios:
 1.7       (OK)      01.      *Apos colocarmos dois valores, o programa nos diz se os valores são par ou impar e se sao positivos e negativos.     
 1.8       (OK)      01.      *Apos colocarmos dois valores, o programa nos diz se os valores sao iguais ou diferentes.     
 1.9       (OK)      01.      *Apos colocarmos tres valores, o programa nos diz se o primeiro valor pertence ao intervalo criado pelos dois outros valores.     
-2.0       (OK)      01.      *Apos colocarmos tres valores, o programa nos diz se o primeiro valor pertence ao intervalo criado pelos dois outros valores, caso todos sejam diferentes.     
     
     
 ----------------------------------------------- notas / observacoes / comentarios 
@@ -118,7 +116,6 @@ Exercicios:
 1.7     01.     *Nao houve problemas na compilacao do programa.
 1.8     01.     *Nao houve problemas na compilacao do programa.
 1.9     01.     *Nao houve problemas na compilacao do programa.
-2.0     01.     *Nao houve problemas na compilacao do programa.
 
 ---------------------------------------------- previsao de testes 
 
@@ -256,15 +253,7 @@ c.) -5.25 e -5.25        Resultado: E' mostrada a seguinte mensagem "O primeiro 
 Versão: 1.9
 a.)  7.1, 7.5 e 7             Resultado: E' mostrada a seguinte mensagem "O primeiro valor esta entre os dois  (7.000000) < (7.100000) < (7.500000)".
 b.)  3, -5 e 8                Resultado: E' mostrada a seguinte mensagem "O primeiro valor esta entre os dois  (-5.000000) < (3.000000) < (8.000000)".
-c.)  5, 9 e 9                 Resultado: E' mostrada a seguinte mensagem "ERRO:Os valores de entrada estao errados (9.000000) = (9.000000) ou (5.000000) esta fora do intervalo (9.000000:9.000000) ".
-// Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos. 
-
-Versão: 2.0
-a.)  7.1, 7.5 e 7             Resultado: E' mostrada a seguinte mensagem "O primeiro valor esta entre os dois  (7.000000) < (7.100000) < (7.500000)".
-b.)  3, -5 e 8                Resultado: E' mostrada a seguinte mensagem "O primeiro valor esta entre os dois  (-5.000000) < (3.000000) < (8.000000)".
-c.)  5, 9 e 9                 Resultado: E' mostrada a seguinte mensagem "ERRO:Os valores de entrada estao errados (9.000000) = (9.000000) = (5.000000), (9.000000) = (5.000000), (5.000000) = (9.000000) ou (9.000000) = (9.000000).".
-d.)  9, 9 e 9                 Resultado: E' mostrada a seguinte mensagem "ERRO:Os valores de entrada estao errados (9.000000) = (9.000000) = (9.000000), (9.000000) = (9.000000), (9.000000) = (9.000000) ou (9.000000) = (9.000000).".
-e.)  5, 7 e 10                Resultado: Erro:  esta fora do intervalo (5.000000:10.000000)
+c.)  5, 9 e 9                 Resultado: E' mostrada a seguinte mensagem "ERRO:Os valores de entrada estao errados (9.000000) = (9.000000)".
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos. 
 
 ---------------------------------------------- historico 
@@ -291,7 +280,6 @@ Exercicios:
 1.7      27/03    esboco
 1.8      27/03    esboco
 1.9      27/03    esboco
-2.0      27/03    esboco
 
 
 ---------------------------------------------- testes 
@@ -318,6 +306,5 @@ Exercicios:
  1.7      01. ( OK )           Leitura e exibicao numeros inteiros.
  1.8      01. ( OK )           Leitura e exibicao numeros reais.
  1.9      01. ( OK )           Leitura e exibicao numeros reais.
- 2.0      01. ( OK )           Leitura e exibicao numeros reais.
  
 */

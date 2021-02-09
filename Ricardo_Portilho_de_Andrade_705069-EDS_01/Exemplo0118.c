@@ -1,4 +1,4 @@
-/*    Exemplo0120 - v2.0. - 17 / 03 / 2020   
+/*    Exemplo0118 - v1.8. - 17 / 03 / 2020   
       Author: Ricardo Portilho de Andrade        
 */ 
 
@@ -12,22 +12,29 @@
 int main ( int argc, char* argv [ ] ) 
 {
 // definir dado
-double x = 0.0;//Raio 
-double y = M_PI;//PI
+double x = 0;//largura 
+double y = 0;//comprimento
+double z = 0;//altura
 
 // identificar     
-    printf ( "%s\n", "\nExemplo0120 - Programa = v2.0" );     
+    printf ( "%s\n", "\nExemplo0118 - Programa = v1.8" );     
     printf ( "%s\n", "Autor: Ricado Portilho de Andrade" );     
     printf ( "\n" ); // mudar de linha 
 
 //programa 
 
-printf("Digite o raio da esfera:");
-scanf("%lf", &x); //Raio
- 
-double v = ((4.0*y*pow((x/8.0),3.0))/3.0);   //descubrir o volume da esfera    
+printf("Digite o tamanho da largura do paralelepipedo:");
+scanf("%lf", &x); //largura
 
-printf("\nO volume da esfera com um oitavo do raio dado e' %lf\n", v);
+printf("\nDigite o tamanho da altura do paralelepipedo:");
+scanf("%lf", &y); //altura
+
+printf("\nDigite o tamanho do comprimento do paralelepipedo:");
+scanf("%lf", &z); //comprimento
+ 
+double v = ((x/2)*(y/2)*(z/2));   //descubrir o valor do volume do paralelepipedo com metade dos valores   
+
+printf("\nO volume de um paralelepipedo com metade dos valores das medidas e' %lf\n", v);
 
 getchar();
 getchar();
@@ -53,14 +60,13 @@ Versao  Resultado  Teste     Observar as saidas
 EXERCICIOS:
 1.1       (OK)      01.      *Um valor inteiro e' inserido e e' tratado como um lado de um quadrado, depois e' dado o valor da metade da area do quadrado. 
 1.2       (OK)      01.      *Um valor inteiro e' inserido e e' tratado como um lado de um quadrado, depois o valor e' mutiplicado por dois  e e' dado a area e perimetro. 
-1.3       (OK)      01.      *Dois valores sao inseridos e sao tratados como lados de um retangulo, depois e' dado o valor da terca parte da area do retangulo.
-1.4       (OK)      01.      *Dois valores sao inseridos e sao tratados como lados de um retangulo, depois os valores sao mutiplicados por dois e e' dado a area e o perimetro.
+1.3       (OK)      01.      *Dois valores sao inseridos e sao tratados como base e altura de um retangulo, depois e' dado o valor da terca parte da area do retangulo.
+1.4       (OK)      01.      *Dois valores sao inseridos e sao tratados como base e altura de um retangulo, depois os valores sao mutiplicados por dois e e' dado a area e o perimetro.
 1.5       (OK)      01.      *Dois valores reais sao inseridos e sao tratados como base e altura de um retangulo, o valor referente a altura e' dividido por dois e e' dado a area e o perimetro.
 1.6       (OK)      01.      *Um valor e' dado e e' tratado como um lado de um triangulo equilatero, depois os valores referentes ao perimetro, area e altura sao entregues.  
 1.7       (OK)      01.      *Um valor e' dado e e' tratado como um lado de um cubo, depois esse valor e' dividido por quatro e e' entregre o valor do perimetro.
 1.8       (OK)      01.      *Tres valores sao dados e sao tratados como largura, comprimento e altura, depois e' entregue o valor do volume de um paralelepipedo com metade dessas proporcoes.
-1.9       (OK)      01.      *Um valor e' dado e e' tratado como o raio de um circulo, depois esse valor e multiplicado por dois e e' entregue o valor da area.
-2.0       (OK)      01.      *Um valor e' dado e e' tratado como o raio de uma esfera, depois esse valor e dividido por oito e e' entregue o valor do volume da esfera.
+
 
 ---------------------------------------------- notas / observacoes / comentarios 
 Versao  Teste    Comentarios
@@ -84,8 +90,7 @@ EXERCICIOS:
 1.6     01.     *Nao houve problemas na compilacao do programa.
 1.7     01.     *Nao houve problemas na compilacao do programa.
 1.8     01.     *Nao houve problemas na compilacao do programa.
-1.9     01.     *Nao houve problemas na compilacao do programa.
-2.0     01.     *Nao houve problemas na compilacao do programa.
+
 
 ---------------------------------------------- previsao de testes 
 
@@ -95,30 +100,22 @@ b.)-5            RESUTADO: O valor do x para de ser considerado 0 e e' comeca a 
 c.)123456789     RESUTADO: O valor do x para de ser considerado 0 e e' comeca a ser igual a 123456789.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
 
-/----------------------------------------------------------------------------------------------------------------------
-
 VERSAO: 0.2
 a.)0.5           RESUTADO: O valor do x para de ser considerado 0 e comeca a ser igual a 0.5.
 b.)-0.5          RESUTADO: O valor do x para de ser considerado 0 e comeca a ser igual a -0.5.
 c.)1.23456789    RESUTADO: O valor do x para de ser considerado 0 e comeca a ser igual a 1.23456789.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
 
-/------------------------------------------------------------------------------------------------------------------
-
 VERSAO: 0.3
 RESUTADO: O valor de x para de ser considerado A e comeca a ser igual a uma letra escolhida. 
 P.s.: O valor sempre ira ser igual a primeira letra que a pessoa colocar. 
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
-
-/---------------------------------------------------------------------------------------------------------------------
 
 VERSAO: 0.4
 a.)1           RESUTADO: O valor de x e' indentificado como 1.
 b.)0           RESUTADO: O valor de x e' indentificado como 0.
 c.)true        RESUTADO: O valor de x e' indentificado como 0.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
-
-/---------------------------------------------------------------------------------------------------------------------
 
 VERSAO: 0.5
 a.)def           RESUTADO: O valor de x e' indentificado como def.
@@ -128,15 +125,11 @@ P.s.: Somente quando as palavras de uma frase sao conectadas por algum tipo de c
 a frase sera mostrada em sua totalidade, caso nao sejam conectadas somente a primeira palavra aparecera.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
 
-/---------------------------------------------------------------------------------------------------------------------
-
 VERSAO: 0.6
 a.) 3 e  5        RESUTADO: O valor dado e' z = (3)*(5)=(15).
 b.)-3 e  5        RESUTADO: O valor dado e' z = (-3)*(5)=(-15).
 c.)-3 e -5        RESUTADO: O valor dado e' z = (-3)*(-5)=(15).
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
-
-/---------------------------------------------------------------------------------------------------------------------
 
 VERSAO: 0.7
 a.) 2.0 e  3.0        RESUTADO: O valor dado e' 8.
@@ -145,8 +138,6 @@ c.)-3.0 e  2.0        RESUTADO: O valor dado e' 9.
 d.)-2.0 e -3.0        RESUTADO: o valor dado e' -0.125.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
 
-/---------------------------------------------------------------------------------------------------------------------
-
 VERSAO: 0.8
 a.) 12 e 24        RESUTADO: O valor e' igual a 1224.
 b.) ab e cd        RESUTADO: O valor e' igual a abcd. 
@@ -154,13 +145,9 @@ c.)  a e bc        RESUTADO: O valor e' igual a abc.
 d.) ab e c         RESUTADO: O valor e' igual a abc.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.  
 
-/----------------------------------------------------------------------------------------------------------------------
-
 VERSAO: 0.9
 RESULTADO: O programa utiliza a variavel x, y e z para um conjunto de acoes, sendo que uma das mais usadas e' a logica.
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
-/----------------------------------------------------------------------------------------------------------------------
 
 VERSAO: 1.0
 a.) a          RESUTADO: O valor e' igual a a
@@ -171,66 +158,37 @@ e.) abc def    RESUTADO: O valor e' igual a abc
 f.) abc def    RESUTADO: O valor e' igual a abc def
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-
 EXERCICIOS:
-
 VERSAO: 1.1
 a.) 4           RESULTADO: O valor entregue e' igual a 8
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
-/------------------------------------------------------------------------------------------------------------
 
 VERSAO: 1.2
 a.) 5           RESULTADO: Os valores entregues sao iguais a 100 e 40 
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
-/------------------------------------------------------------------------------------------------------------
-
 VERSAO: 1.3
 a.) 15 e 2           RESULTADO: O valor entregue e' igual a 10 
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
-/--------------------------------------------------------------------------------------------------------------
 
 VERSAO: 1.4
 a.) 4 e 5           RESULTADO: Os valores entregues sao iguais a 80 e 36 
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
-/--------------------------------------------------------------------------------------------------------------
-
 VERSAO: 1.5
 a.) 5.5 e 6.6           RESULTADO: O valor entregue e' igual a 18.15 
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
-/--------------------------------------------------------------------------------------------------------------
 
 VERSAO: 1.6
 a.) 4           RESULTADO: Os valores entregues sao iguais a 12.000000, 6.928203 e 3.464102
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
-/------------------------------------------------------------------------------------------------------------------
-
 VERSAO: 1.7
 a.) 8           RESULTADO: O valor entregue e' igual a 8.000000
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
-/-----------------------------------------------------------------------------------------------------------------
-
 VERSAO: 1.8
 a.) 4, 8 e 6           RESULTADO: O valor entregue e' igual a 24.000000
-// Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
-/----------------------------------------------------------------------------------------------------------------
-
-VERSAO: 1.9
-a.) 1                RESULTADO: O valor entregue e' igual a 12.566371
-// Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
-/----------------------------------------------------------------------------------------------------------------
-
-VERSAO: 2.0
-a.) 48                RESULTADO: O valor entregue e' igual a 904.778684
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
 ---------------------------------------------- historico 
@@ -256,8 +214,6 @@ EXERCICIOS:
 1.6      20/03    utilizacao de bibliotecas da propria linguagem.
 1.7      20/03    utilizacao de bibliotecas da propria linguagem.
 1.8      20/03    utilizacao de bibliotecas da propria linguagem.
-1.9      20/03    utilizacao de bibliotecas da propria linguagem.
-2.0      20/03    utilizacao de bibliotecas da propria linguagem. 
 
 ---------------------------------------------- testes 
  
@@ -282,7 +238,5 @@ EXERCICIOS:
  1.6      01. ( OK )           entrada e saida de valores reais.
  1.7      01. ( OK )           entrada e saida de valores reais.
  1.8      01. ( OK )           entrada e saida de valores reais.
- 1.9      01. ( OK )           entrada e saida de valor real.
- 2.0      01. ( OK )           entrada e saida de valor real.
 
 */

@@ -1,4 +1,4 @@
-/*    Exemplo0120 - v2.0. - 17 / 03 / 2020   
+/*    Exemplo0119 - v1.9. - 17 / 03 / 2020   
       Author: Ricardo Portilho de Andrade        
 */ 
 
@@ -12,22 +12,22 @@
 int main ( int argc, char* argv [ ] ) 
 {
 // definir dado
-double x = 0.0;//Raio 
+double x = 0;//Raio 
 double y = M_PI;//PI
 
 // identificar     
-    printf ( "%s\n", "\nExemplo0120 - Programa = v2.0" );     
+    printf ( "%s\n", "\nExemplo0119 - Programa = v1.9" );     
     printf ( "%s\n", "Autor: Ricado Portilho de Andrade" );     
     printf ( "\n" ); // mudar de linha 
 
 //programa 
 
-printf("Digite o raio da esfera:");
+printf("Digite o raio do circulo:");
 scanf("%lf", &x); //Raio
  
-double v = ((4.0*y*pow((x/8.0),3.0))/3.0);   //descubrir o volume da esfera    
+double a = (pow((x*2),2)*y);   //descubrir a area do circulo    
 
-printf("\nO volume da esfera com um oitavo do raio dado e' %lf\n", v);
+printf("\nA area de um circulo com o dobro de raio e' %lf\n", a);
 
 getchar();
 getchar();
@@ -60,7 +60,6 @@ EXERCICIOS:
 1.7       (OK)      01.      *Um valor e' dado e e' tratado como um lado de um cubo, depois esse valor e' dividido por quatro e e' entregre o valor do perimetro.
 1.8       (OK)      01.      *Tres valores sao dados e sao tratados como largura, comprimento e altura, depois e' entregue o valor do volume de um paralelepipedo com metade dessas proporcoes.
 1.9       (OK)      01.      *Um valor e' dado e e' tratado como o raio de um circulo, depois esse valor e multiplicado por dois e e' entregue o valor da area.
-2.0       (OK)      01.      *Um valor e' dado e e' tratado como o raio de uma esfera, depois esse valor e dividido por oito e e' entregue o valor do volume da esfera.
 
 ---------------------------------------------- notas / observacoes / comentarios 
 Versao  Teste    Comentarios
@@ -85,7 +84,6 @@ EXERCICIOS:
 1.7     01.     *Nao houve problemas na compilacao do programa.
 1.8     01.     *Nao houve problemas na compilacao do programa.
 1.9     01.     *Nao houve problemas na compilacao do programa.
-2.0     01.     *Nao houve problemas na compilacao do programa.
 
 ---------------------------------------------- previsao de testes 
 
@@ -227,12 +225,6 @@ VERSAO: 1.9
 a.) 1                RESULTADO: O valor entregue e' igual a 12.566371
 // Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
 
-/----------------------------------------------------------------------------------------------------------------
-
-VERSAO: 2.0
-a.) 48                RESULTADO: O valor entregue e' igual a 904.778684
-// Obs: Testei todos os valores acima e nao ocorreu erros na execucao dos mesmos.
-
 ---------------------------------------------- historico 
  
 Versao   Data     Modificacao   
@@ -257,7 +249,6 @@ EXERCICIOS:
 1.7      20/03    utilizacao de bibliotecas da propria linguagem.
 1.8      20/03    utilizacao de bibliotecas da propria linguagem.
 1.9      20/03    utilizacao de bibliotecas da propria linguagem.
-2.0      20/03    utilizacao de bibliotecas da propria linguagem. 
 
 ---------------------------------------------- testes 
  
@@ -283,6 +274,6 @@ EXERCICIOS:
  1.7      01. ( OK )           entrada e saida de valores reais.
  1.8      01. ( OK )           entrada e saida de valores reais.
  1.9      01. ( OK )           entrada e saida de valor real.
- 2.0      01. ( OK )           entrada e saida de valor real.
+
 
 */
