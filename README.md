@@ -1,3 +1,3 @@
 # AEDI
 
-Atididades feitas no curso de Algoritimo e Estrutura de Dados I.
+Atididades feitas no matéria de Algoritimo e Estrutura de Dados I.
